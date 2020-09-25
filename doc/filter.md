@@ -1,5 +1,7 @@
 # Filter过滤器
 基于[el-dropdown](https://element.eleme.cn/#/zh-CN/component/dropdown) [el-popover](https://element.eleme.cn/#/zh-CN/component/popover)  
+#### 示例
+![过滤器](https://github.com/861621821/xilan-docs/raw/master/img/filter.png)
 #### 用法
 ``` html
 <template>

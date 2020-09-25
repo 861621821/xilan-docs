@@ -1,5 +1,7 @@
 # Table表格
 基于[el-table](https://element.eleme.cn/#/zh-CN/component/table)
+#### 示例
+![表格](https://github.com/861621821/xilan-docs/raw/master/img/table.png)
 >支持行内编辑
 #### 用法
 ``` html
