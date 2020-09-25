@@ -2,7 +2,7 @@
 基于[el-popover](https://element.eleme.cn/#/zh-CN/component/popover)
 > 省市区三级联动组件，支持搜索,默认显示全国省市区信息，如需显示国外或国内部分省市区信息，可通过data字段传入
 #### 示例
-![省市区三级联动](https://github.com/861621821/xilan-docs/raw/master/img/ssq.png)
+![省市区三级联动](http://qh722157g.hn-bkt.clouddn.com/ssq.png)
 #### 基础用法  
 ``` html
 <template>
