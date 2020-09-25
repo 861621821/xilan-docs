@@ -27,4 +27,4 @@
 | text  | 展示的文本  | String\|Array  | - |
 | speed  | 滚动速度[ 1-5 ]  | Number  | 3 |
 | delay  | 延时播放[ 毫秒 ]  | Array  | 0 |
-| interval  | 两条文本之间的间距[ px ]  | Array  | 150 |
+| interval  | 两条文本之间的间距[ px ]  | Number  | 150 |
