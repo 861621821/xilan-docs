@@ -3,7 +3,7 @@
 > 省市区三级联动组件，支持搜索，默认显示全国省市区信息，如需显示国外或国内部分省市区信息，可通过data字段传入
 #### 示例
 
-<img src="/static/img/xilan/省市区.gif">
+<img src="../static/img/xilan/省市区.gif">
 
 #### 基础用法  
 ``` html

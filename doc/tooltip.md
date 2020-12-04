@@ -3,7 +3,7 @@
 > 当文本过长显示不下时，打点显示，鼠标hover弹出完整文本，只在显示不下时出现
 #### 示例  
 
-<img src="/static/img/xilan/tooltip.gif">   
+<img src="../static/img/xilan/tooltip.gif">   
 
 #### 用法  
 ``` html
