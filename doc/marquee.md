@@ -1,6 +1,10 @@
 # Marquee跑马灯
 基于[create-keyframe-animation](https://www.npmjs.com/package/create-keyframe-animation)
->文本跑马灯，支持单条文本循环、多条文本循环
+>文本跑马灯，支持单条文本循环、多条文本循环  
+#### 示例
+<img src="/static/img/xilan/跑马灯.gif">   
+
+<b style="color: red">gif效果图卡顿是录屏软件导致的，由于是css3动画，实际播放非常丝滑，请放心使用。</b>
 #### 用法
 ``` html
 <xl-marquee :speed="5" :delay="1000" :text="text"></xl-marquee>
@@ -24,7 +28,7 @@
 #### 属性  
 | 参数  | 说明    | 类型 |  默认值 |
 | ---- |  ----  | ----  | ----  |
-| text  | 展示的文本  | String\|Array  | - |
-| speed  | 滚动速度[ 1-5 ]  | Number  | 3 |
+| content  | 展示的文本  | String\|Array  | - |
+| speed  | 滚动速度[ 1-5 ]  | String\|Number  | 3 |
 | delay  | 延时播放[ 毫秒 ]  | Array  | 0 |
 | interval  | 两条文本之间的间距[ px ]  | Number  | 150 |

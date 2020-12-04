@@ -1,7 +1,6 @@
 # Filter过滤器
 基于[el-dropdown](https://element.eleme.cn/#/zh-CN/component/dropdown) [el-popover](https://element.eleme.cn/#/zh-CN/component/popover)  
-#### 示例
-![过滤器](http://qh722157g.hn-bkt.clouddn.com/filter.png)
+
 #### 用法
 ``` html
 <template>
