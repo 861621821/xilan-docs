@@ -104,9 +104,9 @@ _提示：Rule Editor里METHOD:POST EXACT:表示精确匹配，把它删掉可�
 
 + 请求发出前断点  
 
-图标状态为<img src="/xilan-docs/static/img/fiddler/前.png">  
+图标状态为<img src="/xilan-docs/static/img/fiddler/前.png" class="nowh">  
 
-<img src="/xilan-docs/static/img/fiddler/断点3.png">  
+<img src="/xilan-docs/static/img/fiddler/断点3.png" class="nowh">  
 
 执行完上述操作后可以看到，请求的参数已经被我们篡改了，response返回篡改后id的数据。
 
