@@ -3,7 +3,7 @@
 > 当文本过长显示不下时，打点显示，鼠标hover弹出完整文本，只在显示不下时出现
 #### 示例  
 
-<img src="/xilan-docs/static/img/xilan/tooltip.gif" style="background: url('/xilan-docs/static/img/图片加载中.png')">   
+<img src="https://861621821.github.io/xilan-docs/static/img/xilan/tooltip.gif" style="background: url('https://861621821.github.io/xilan-docs/static/img/图片加载中.png')">   
 
 #### 用法  
 ``` html
