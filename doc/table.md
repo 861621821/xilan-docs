@@ -9,13 +9,15 @@
 ``` html
 <template>
   <xl-table
-    ref="table"
-    :attributes="tableOptions"
+    :data="tableData"
     :fields="fields"
-    :getDataHandler="getDataHandler"
+    :float-paging="true"
+    :el="el"
+    :distance="40"
+    :editHandler="editHandler"
   >
     <template v-slot:handler="{row}">
-      <i class="el-icon-delete"></i>
+      <i class="el-icon-delete" @click="doDelete(row)"></i>
     </template>
   </xl-table>
 </template>
@@ -23,35 +25,43 @@
   export default {
     data(){
       return{
+        el: null,
+        tableData: [{
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
+        }, {
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
+        }, {
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
+        }, {
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
+        }],
         fields: [{
-          field: 'demandId',
-          label: 'ID',
-          width: '80px'
+          field: 'name',
+          label: '姓名'
         },{
-          field: 'priority',
-          label: '优先级',
-          width: '100px'
+          field: 'address',
+          label: '地址',
+          type: 'edit'
         },{
           field: 'handler',
           label: '操作',
-          type: 'template',
-          width: '100px'
-        }],
-        tableOptions: {
-          border: false
-        }
-      }
-    },
-    methods: {
-      getDataHandler(){
-        retrun [{
-          demandId: '10000',
-          priority: '高'
-        },{
-          demandId: '10001',
-          priority: '低'
+          type: 'template'
         }]
       }
+    },
+    mounted(){
+      this.el = document.querySelector('body') 
+    },
+    methods: {
+      editHandler(){},
+      doDelete(){}
     }
   }
 </script>
@@ -60,10 +70,14 @@
 | 参数  | 说明    | 类型 |  默认值 |
 | ---- |  ----  | ----  | ----  |
 | data  | 默认给表格的数据,会被attributes里有data覆盖  | Array  | - |
+| immediate  | 是否立即调用getDataHandler请求数据  | Boolean  | - |
 | attributes  | 表格属性，同[Table Attributes](https://element.eleme.cn/#/zh-CN/component/table) | Object |  - |
 | fields  | 对象形式的字段集合，详情请查看[fieldsItem](/doc/table?id=fieldsItem)  | Array | - |
 | getDataHandler  | 查询数据的回调方法   | Function(params) | - |
 | editHandler  | 行内编辑回调方法，参数为修改后的该行数据  | Function(row)  | - |  
+| floatPaging  | 是否开启悬浮分页  | Boolean  | - |  
+| el  | 产生滚动的元素，监听此元素判断何时显示悬浮分页  | Function(row)  | - | 
+| distance  | 页面中除table外的元素占去的高度，比如页面头部等，会影响悬浮分页  | Number  | 0 | 
   
 #### fieldsItem  
 | 参数  | 说明   | 类型 |  默认值 |
