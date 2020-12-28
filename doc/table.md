@@ -75,7 +75,7 @@
 | fields  | 对象形式的字段集合，详情请查看[fieldsItem](/doc/table?id=fieldsItem)  | Array | - |
 | getDataHandler  | 查询数据的回调方法   | Function(params) | - |
 | editHandler  | 行内编辑回调方法，参数为修改后的该行数据  | Function(row)  | - |  
-| floatPaging  | 是否开启悬浮分页  | Boolean  | - |  
+| floatPaging  | 是否开启悬浮分页  | Boolean  | false |  
 | el  | 产生滚动的元素，监听此元素判断何时显示悬浮分页  | Function(row)  | - | 
 | distance  | 页面中除table外的元素占去的高度，比如页面头部等，会影响悬浮分页  | Number  | 0 | 
   

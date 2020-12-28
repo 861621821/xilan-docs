@@ -70,7 +70,8 @@ _提示：Rule Editor里METHOD:POST EXACT:表示精确匹配，把它删掉可�
 <p>解决方法是在拖到右边前，先点击该请求，可以看到显示"Response body is encoded.Click to decode."，点击解码，然后再完成后面的操作。</p>
 <img src="https://861621821.github.io/xilan-docs/static/img/fiddler/解码.png" ><br>
 + <p>在正式请求前有一次预请求options，导致不能匹配到我们设置的规则</p>
-<p>解决方法是把那条预请求也拖到右边 
+<p>解决方法是把那条预请求也拖到右边</p>
++ <p>所有操作都正确，就是抓不到任何包：检查是否设置了其他代理，比如打开了谷歌上网助手</p>
 
 ###### Composer
 <p style="text-indent:2em">
@@ -86,7 +87,10 @@ _提示：Rule Editor里METHOD:POST EXACT:表示精确匹配，把它删掉可�
 >  修改脚本前建议备份一下，免的玩坏了<br>  
 
 <img src="https://861621821.github.io/xilan-docs/static/img/fiddler/script1.png" ><br> 
-我这个例子是不管点击任何文章都显示id为10030的文章内容，只是为了达到这个效果，脚本可能写的不优雅，勿喷。
+我这个例子是不管点击任何文章都显示id为10030的文章内容，只是为了达到这个效果，脚本可能写的不优雅，勿喷。  
+再举一个栗子，开发过程中有多个后台大佬给你写接口，在他们合并代码前，如果想同时调用A和B大佬的本地接口，除非写死请求的地址，否则应该是很困难的。利用Fiddler可以这样，不用改任何代码，方便又快捷  
+<img src="https://861621821.github.io/xilan-docs/static/img/fiddler/FiddlerScript.png" ><br>  
+
 ###### 设置断点
 <p style="text-indent:2em">
   Fiddler提供了http请求断点机制，我们可以在请求发出前以及服务器返回数据后设置断点。可以通过点击按钮或者命令的方式设置断点，利用断点可以修改请求包或者响应包。
