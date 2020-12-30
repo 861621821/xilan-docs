@@ -2,7 +2,7 @@
 基于[el-table](https://element.eleme.cn/#/zh-CN/component/table)
 #### 行内编辑以及悬浮分页示例  
 
-<img src="https://861621821.github.io/xilan-docs/static/img/xilan/行内编辑悬浮分页.gif" style="background: url('https://861621821.github.io/xilan-docs/static/img/图片加载中.png')">  
+<img src="https://861621821.github.io/repository/img/xilan/行内编辑悬浮分页.gif" style="background: url('https://861621821.github.io/repository/img/图片加载中.png')">  
 
 >支持行内编辑
 #### 基础用法
